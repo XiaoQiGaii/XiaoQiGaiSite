@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rhythm Card Game</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    h1.section-heading {
+      font-size: 2.8rem;
+      color: #ff77aa;
+      margin-bottom: 2rem;
+    }
+    h2.section-heading {
+      font-size: 2.2rem;
+      color: #ff99cc;
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+    }
+    h3 {
+      font-size: 1.6rem;
+      color: #ff77aa;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-bar">
+      <div class="logo">小乞丐</div>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="info-section">
+    <h1 class="section-heading">Rhythm-Based Card Game on Unity</h1>
+
+    <div class="info-paragraph align-right">
+      <strong>Development Duration</strong>: 2 weeks
+    </div>
+
+    <p class="info-headparagraph highlight-paragraph">
+        <br>
+      A rhythm + card battle game where players hit on beats and use cards strategically in combat.
+    </p>
+
+    <p class="info-headparagraph highlight-paragraph">
+      During development, I decided to add Slay-the-Spire like rougue experience into the game.
+    </p>
+
+    <div class="info-paragraph align-left">
+        <br><br>
+        <p><strong>Link to project:</strong></p>
+          <a href="https://github.com/XiaoQiGaii/Rhythm-Card-Roguelike" target="_blank">GitHub Repository</a><br>
+          <a href="https://www.youtube.com/watch?v=7vcXCycfNEE" target="_blank">Gameplay Video</a>
+    </div>
+
+    <h2 class="section-heading">Key Features</h2>
+
+    <div class="info-paragraph">
+      <h3>Beat Synchronization</h3>
+      <p>Precise note timing using <code>AudioSettings.dspTime</code>.</p>
+      <p>ScriptableObject-based note sheet system.</p>
+      <p>Real-time note spawning with queue-based hit detection.</p>
+      <p>Fever system grants guaranteed perfects during activation.</p>
+      <video src="media/inBattle.mp4" controls style="max-width:100%; margin:1rem 0;"></video>
+    </div>
+
+    <div class="info-paragraph">
+      <h3>Card System</h3>
+      <p>Modular card effects, use limits, and animation feedback.</p>
+      <p>Easily extendable using ScriptableObjects + prefabs.</p>
+      <p>Deck editing: add/remove cards during runs.</p>
+      <p>Includes dissolve animation using custom shaders.</p>
+      <img src="media/deck.png" alt="Deck Screenshot" style="max-width:100%; margin:1rem 0;">
+    </div>
+
+    <div class="info-paragraph">
+      <h3>Enemy & Debuff System</h3>
+      <p>Enemy state machine with dynamic health/name updates.</p>
+      <p>Implements status effects such as bleeding.</p>
+    </div>
+
+    <div class="info-paragraph">
+      <h3>Node Map System</h3>
+      <p>Unlockable path progression.</p>
+      <p>Room types include: treasure, shops, regular fights, elites, and bosses.</p>
+      <img src="media/map.png" alt="Map Screenshot" style="max-width:100%; margin:1rem 0;">
+    </div>
+
+    <div class="info-paragraph">
+      <h3>UI & Feedback</h3>
+      <p>Smooth UI animations for health, deck, and currency.</p>
+      <p>Combat feedback tied to beat timing.</p>
+      <img src="media/shop.png" alt="Shop UI" style="max-width:100%; margin:1rem 0;">
+      <video src="media/shop.mp4" controls style="max-width:100%; margin:1rem 0;"></video>
+    </div>
+
+    <div class="info-paragraph">
+      <h3>Reward System</h3>
+      <p>Card reward selection ("Pick 1 out of N") after each battle.</p>
+      <img src="media/reward.png" alt="Reward UI" style="max-width:100%; margin:1rem 0;">
+      <video src="media/rewardsys.mp4" controls style="max-width:100%; margin:1rem 0;"></video>
+    </div>
+
+    <div class="info-paragraph">
+      <h3>Audio Settings</h3>
+      <p>Adjustable in-game volume for music, SFX, and BGM.</p>
+      <img src="media/audioSettings.png" alt="Reward UI" style="max-width:100%; margin:1rem 0;">
+    </div>
+
+    <h2 class="section-heading">Highlights</h2>
+    <div class="info-paragraph">
+      <p>ScriptableObject-driven architecture.</p>
+      <p>Dynamic deck draw/preview system.</p>
+      <p>Music-synced gameplay feedback.</p>
+    </div>
+  </main>
+
+  <footer id="footer" class="site-footer">
+    <p>© 2025 Zixian Shi • <a href="mailto:zixianshi@xqgai.com">zixianshi@xqgai.com</a>  • phone:+1 610-762-0060</p>
+  </footer>
+</body>
+</html>

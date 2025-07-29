@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survival Spring</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    h1.section-heading {
+      font-size: 2.8rem;
+      color: #ff77aa;
+      margin-bottom: 2rem;
+    }
+    h2.section-heading {
+      font-size: 2.2rem;
+      color: #ff99cc;
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+    }
+    h3 {
+      font-size: 1.6rem;
+      color: #ff77aa;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-bar">
+      <div class="logo">小乞丐</div>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="info-section">
+    <h1 class="section-heading">Survival Spring - A Survival Game Template on Unreal 5</h1>
+
+    <div class="info-paragraph align-right">
+      <strong>Development Duration</strong>: Still in progress
+    </div>
+
+    <p class="info-headparagraph highlight-paragraph">
+        <br>
+      A survival game template which provides the structure of an <strong>ARK: Survival Evolved</strong> like game.
+    </p>
+
+    <p class="info-headparagraph highlight-paragraph">
+      During development, I learned Unreal 5 Engine.
+    </p>
+
+    <h2 class="section-heading">Key Features</h2>
+
+    <div class="info-paragraph">
+      <h3>Game UI</h3>
+      <p>Developed Main Menu and InGame UI with basic functionalities.</p>
+      <p>MainMenu</p>
+      <img src="media/MainMenu.png" alt="Cliff Environment" style="max-width:100%; margin:1rem 0;">
+      <p>InGameUI</p>
+      <img src="media/InGameUI.png" alt="Cliff Environment" style="max-width:100%; margin:1rem 0;">
+    </div>
+
+    <div class="info-paragraph">
+      <h3>Landscape System</h3>
+      <p>Auto generate landscape on a given mesh, determine the materials.</p>
+      <p>Based on Slope Function, determine the Cliff environment, and blend grass with cliff using dirt</p>
+      <img src="media/cliff.png" alt="Cliff Environment" style="max-width:100%; margin:1rem 0;">
+      <p>Based on Slope and Height function, determine the sand beach, and blend with grass</p>
+      <img src="media/beach.png" alt="Beach Environment" style="max-width:100%; margin:1rem 0;">
+      <p>Implements grass, flower and the foliage using Unreal GrassType.</p>
+      <img src="media/foliage.png" alt="Foliage" style="max-width:100%; margin:1rem 0;">
+      <p>Using plugins and landscape layers to realize trees and water.</p>
+      <p>Auto selecting physical materials for landscape type based on the algorithm.</p>
+      <img src="media/materials.png" alt="Materials" style="max-width:100%; margin:1rem 0;">
+      <img src="media/landscape_grass.png" alt="Landscape Grass" style="max-width:100%; margin:1rem 0;">
+    </div>
+
+    <div class="info-paragraph">
+      <h3>Pawn</h3>
+      <p>Bind the chosen mesh with the Unreal Quinn character for the animation component.</p>
+    </div>
+
+    <div class="info-paragraph">
+      <h3>Environment Interaction - Footstep System</h3>
+      <p>Detecting footstep with Anim Notify.</p>
+      <p>In Notify, executes logic and functions.</p>
+      <img src="media/Notify_Blueprint.png" alt="Notify Blueprint" style="max-width:100%; margin:1rem 0;">
+      <img src="media/Notify.png" alt="Notify" style="max-width:100%; margin:1rem 0;">
+      <p>Realizing footstep sounds and footstep area detections using Unreal physical material.</p>
+    </div>
+  </main>
+
+  <footer id="footer" class="site-footer">
+    <p>© 2025 Zixian Shi • <a href="mailto:zixianshi@xqgai.com">zixianshi@xqgai.com</a>  • phone:+1 610-762-0060</p>
+  </footer>
+</body>
+</html>
