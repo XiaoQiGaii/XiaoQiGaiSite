@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rhythm Card Game</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    h1.section-heading {
+      font-size: 2.8rem;
+      color: #ff77aa;
+      margin-bottom: 2rem;
+    }
+    h2.section-heading {
+      font-size: 2.2rem;
+      color: #ff99cc;
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+    }
+    h3 {
+      font-size: 1.6rem;
+      color: #ff77aa;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-bar">
+      <div class="logo">小乞丐</div>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#footer">Contact</a></li>
+        <li><a href="https://www.linkedin.com/in/zixian-shi-030739300/" target="_blank">LinkedIn</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="info-section">
+    <h1 class="section-heading">More Hero RPG on Unity</h1>
+
+    <div class="info-paragraph align-right">
+      <strong>Development Duration</strong>: Just started
+    </div>
+
+    <p class="info-headparagraph highlight-paragraph">
+        <br>
+      A turn based pet battle RPG in development.
+    </p>
+
+    <p class="info-headparagraph highlight-paragraph">
+      During development, I decided to add Slay-the-Spire like rougue experience into the game.
+    </p>
+
+    <!-- <div class="info-paragraph align-left">
+        <br><br>
+        <p><strong>Link to project:</strong></p>
+          <a href="https://github.com/XiaoQiGaii/Rhythm-Card-Roguelike" target="_blank">GitHub Repository</a><br>
+          <a href="https://www.youtube.com/watch?v=7vcXCycfNEE" target="_blank">Gameplay Video</a>
+    </div> -->
+
+    <h2 class="section-heading">Key Features</h2>
+
+    <div class="info-paragraph">
+      <h3>2.5D work art</h3>
+      <p>Using Unity3D to represent the art style of 2D</p>
+      <p>ScriptableObject-based note sheet system.</p>
+      <p>Real-time note spawning with queue-based hit detection.</p>
+      <p>Fever system grants guaranteed perfects during activation.</p>
+      <img src="media/WorldStage.png" alt="Deck Screenshot" style="max-width:100%; margin:1rem 0;">
+    </div>
+
+    <div class="info-paragraph">
+      <h3>Click To Go system</h3>
+      <p>Using <code>NavMeshSurface</code> and <code>NavMeshAgent</code></p>
+      <p>to create a Click to Go moving system</p>
+      <p>Adding collide boxes for map objects for details.</p>
+      <p>The collide boxes will provide layers as well.</p>
+      <video src="media/ClickToGo.mp4" controls style="max-width:100%; margin:1rem 0;"></video>
+    </div>
+
+    <div class="info-paragraph">
+      <h3>Pet Spawning</h3>
+      <p>Modulelized pet spawning system.</p>
+      <p>Easily extendable using ScriptableObjects + prefabs.</p>
+      <p>More functions in development:</p>
+      <p>Pet catching/Pet Stats/Pet skills</p>
+      <img src="media/2.5DRPG.png" alt="Deck Screenshot" style="max-width:100%; margin:1rem 0;">
+      <img src="media/Pets.png" alt="Deck Screenshot" style="max-width:100%; margin:1rem 0;">
+    </div>
+
+    <div class="info-paragraph">
+      <h3>Turn base battle - [In Development]</h3>
+      <p>When Colliding with pets in wild.</p>
+      <p>We will enter battle stage for a N vs N fight.</p>
+      <p>Player will be fighting with the pet.</p>
+      <img src="media/BattleField.png" alt="Deck Screenshot" style="max-width:100%; margin:1rem 0;">
+    </div>
+
+    <div class="info-paragraph">
+      <h3>More functions in plan</h3>
+      <p>Audio System.</p>
+      <p>UI that fits the art style.</p>
+      <p>Quest system in game.</p>
+      <p>Interactable world items.</p>
+      <p>Player and pet traning system.</p>
+      <p>Equipments & special skills.</p>
+    </div>
+
+    <h2 class="section-heading">Highlights</h2>
+    <div class="info-paragraph">
+      <p>ScriptableObject-driven architecture.</p>
+      <p>Dynamic deck draw/preview system.</p>
+      <p>Music-synced gameplay feedback.</p>
+    </div>
+  </main>
+
+  <footer id="footer" class="site-footer">
+    <p>© 2025 Zixian Shi • <a href="mailto:zixianshi@xqgai.com">zixianshi@xqgai.com</a>  • phone:+1 610-762-0060</p>
+  </footer>
+</body>
+</html>
