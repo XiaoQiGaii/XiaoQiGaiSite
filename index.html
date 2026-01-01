@@ -3,82 +3,187 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zixian Shi – Development Portfolio</title>
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav-bar">
-      <div class="logo">小乞丐</div>
-      <ul class="nav-list">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#projects-overview">Projects</a></li>
-        <li><a href="#footer">Contact</a></li>
-        <li><a href="https://www.linkedin.com/in/zixian-shi-030739300/" target="_blank">LinkedIn</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="page-shell">
+    <!-- Profile -->
+    <aside class="profile-panel">
+      <div class="profile-avatar" style="background-image: url('images/avatar.jpg');"></div>
 
-  <main>
-    <section id="hero" class="hero-section">
-      <h1>Zixian Shi</h1>
-      <p class="subtitle">Software Developer / Technical Designer / Gamer</p>
-      <p class="bio">Passionate about creating interactive games and experiences.<br>
-      Skilled in Unity (C#), Unreal Engine 5, and more. I hope you can enjoy my works!</p>
-      <a href="#projects-overview" class="cta-button">View My Projects</a>
-    </section>
+      <div class="profile-name">ZIXIAN SHI</div>
+      <div class="profile-handle">/ Xian</div>
 
-    <section id="about" class="info-section">
-      <h2 class="section-heading">About Me</h2>
-      <p class="info-paragraph">I’m a designer/programmer and technical designer passionate about creating things I like.</p>
-    </section>
+      <p class="profile-role">Software Developer · Technical Designer · Gamer</p>
+      <p class="profile-status">Work hard, study happy.</p>
 
-    <section id="education" class="info-section">
-      <h2 class="section-heading">Education</h2>
-      <p class="info-paragraph">B.S. in Computer Science – Penn State University, 2025</p>
-    </section>
-
-    <section id="projects-overview" class="projects-overview">
-      <h2>Featured Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <a href="whispergold.html">
-            <div class="project-image" style="background-image: url('images/whispergold.png');"></div>
-            <h3>Whisper Gold – 2D RPG</h3>
-            <p>A feature-complete 2D RPG created in Unity.</p>
-          </a>
-        </div>
-        <div class="project-card">
-          <a href="rhythmgame.html">
-            <div class="project-image" style="background-image: url('images/rhythmGaming.png');"></div>
-            <h3>Rhythm-Based Card Game</h3>
-            <p>A rhythm and strategic card battle game inspired by Slay the Spire.</p>
-          </a>
-        </div>
-        <div class="project-card">
-          <a href="MoreHero-RPG.html">
-            <div class="project-image" style="background-image: url('images/MoreHero.png');"></div>
-            <h3>MoreHero RPG</h3>
-            <p>A 2.5D turn based RPG game in Unity.</p>
-          </a>
-        </div>
+      <div class="profile-meta">
+        <span>Unity · C · Python · Database · Unreal Engine 5</span>
+        <span>Penn State · CS 2025</span>
       </div>
-      <br></br>
-      <div class="projects-grid">
-        <div class="project-card">
-          <a href="survivalgame.html">
-            <div class="project-image" style="background-image: url('images/SurviveInSpring.png');"></div>
-            <h3>Survival Spring</h3>
-            <p>A survival game template in Unreal Engine 5.</p>
-          </a>
-        </div>
-      </div>
-      
-      
-    </section>
-  </main>
 
-  <footer id="footer" class="site-footer">
-    <p>© 2025 Zixian Shi • <a href="mailto:zixianshi@xqgai.com">zixianshi@xqgai.com</a>  • phone:+1 610-762-0060</p>
-  </footer>
+      <nav class="profile-links">
+        <a href="#latest">HOME&nbsp;<span>[GO]</span></a>
+        <a href="#projects-overview">WORK&nbsp;<span>[GO]</span></a>
+        <a href="#footer">CONTACT&nbsp;<span>[GO]</span></a>
+        <a href="https://www.linkedin.com/in/zixian-shi-030739300/" target="_blank">LINKEDIN&nbsp;<span>[EXT]</span></a>
+      </nav>
+    </aside>
+
+    <!-- 右侧内容区域 -->
+    <div class="content-column">
+      <!-- 顶部导航条（保持你原来的链接） -->
+      <header class="site-header">
+        <nav class="nav-bar">
+          <div class="logo">小乞丐</div>
+          <ul class="nav-list">
+            <li><a href="#latest">Home</a></li>
+            <li><a href="#projects-overview">Projects</a></li>
+            <li><a href="#footer">Contact</a></li>
+            <li><a href="https://www.linkedin.com/in/zixian-shi-030739300/" target="_blank">LinkedIn</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="main-content">
+        <!-- 像图里那种大卡片：Latest / Profile -->
+        <section id="latest" class="card hero-card">
+          <div class="card-header-row">
+            <div class="card-meta">
+              <span class="meta-label">LATEST LOG</span>
+              <!-- 这里你可以手动改日期 -->
+              <span class="meta-time">Portfolio · Updated 2025</span>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <div class="card-tag-line">
+              <span class="card-tag">PROFILE</span>
+            </div>
+
+            <h1 class="card-title">Zixian Shi</h1>
+            <p class="card-subtitle">Software Developer / Technical Designer / Gamer</p>
+
+            <p class="card-text">
+              Passionate about creating interactive games and experiences.<br>
+              Skilled in Unity (C#), Unreal Engine 5, and more. I hope you can enjoy my works!
+            </p>
+
+            <a href="#projects-overview" class="primary-button">ACCESS WORK &gt;</a>
+          </div>
+        </section>
+
+        <!-- About + Education 合并成一块信息卡片 -->
+        <section id="about" class="card info-card">
+          <h2 class="card-section-title">ABOUT ME</h2>
+          <p class="card-text">
+            I’m a designer/programmer and technical designer passionate about creating things I like.
+          </p>
+
+          <h3 class="card-subsection-title">EDUCATION</h3>
+          <p class="card-text">
+            B.S. in Computer Science – Penn State University, 2025
+          </p>
+        </section>
+
+        <!-- Projects 像博客列表一样一条条排 -->
+        <section id="projects-overview" class="card projects-card">
+          <h2 class="card-section-title">FEATURED PROJECTS</h2>
+
+          <div class="project-list">
+            <article class="project-row">
+              <div class="project-main">
+                <div class="project-title-line">
+                  <span class="project-title">Whisper Gold – 2D RPG</span>
+                  <span class="project-tag">Unity</span>
+                </div>
+                <p class="project-desc">
+                  A feature-complete 2D RPG created in Unity.
+                </p>
+              </div>
+              <a class="project-button" href="whispergold.html">ACCESS FILE &gt;</a>
+            </article>
+
+            <article class="project-row">
+              <div class="project-main">
+                <div class="project-title-line">
+                  <span class="project-title">Rhythm-Based Card Game</span>
+                  <span class="project-tag">Unity · Rhythm</span>
+                </div>
+                <p class="project-desc">
+                  A rhythm and strategic card battle game inspired by Slay the Spire.
+                </p>
+              </div>
+              <a class="project-button" href="rhythmgame.html">ACCESS FILE &gt;</a>
+            </article>
+
+            <article class="project-row">
+              <div class="project-main">
+                <div class="project-title-line">
+                  <span class="project-title">MoreHero RPG</span>
+                  <span class="project-tag">Unity · 2.5D</span>
+                </div>
+                <p class="project-desc">
+                  A 2.5D turn-based RPG game in Unity.
+                </p>
+              </div>
+              <a class="project-button" href="MoreHero-RPG.html">ACCESS FILE &gt;</a>
+            </article>
+
+            <article class="project-row">
+              <div class="project-main">
+                <div class="project-title-line">
+                  <span class="project-title">Survival Spring</span>
+                  <span class="project-tag">UE5 · Survival</span>
+                </div>
+                <p class="project-desc">
+                  A survival game template in Unreal Engine 5.
+                </p>
+              </div>
+              <a class="project-button" href="survivalgame.html">ACCESS FILE &gt;</a>
+            </article>
+
+            <article class="project-row">
+              <div class="project-main">
+                <div class="project-title-line">
+                  <span class="project-title">3D Adventurer VS Robots</span>
+                  <span class="project-tag">Unity · 3D</span>
+                </div>
+                <p class="project-desc">
+                  A 3D action game in Unity.
+                </p>
+              </div>
+              <a class="project-button" href="3DBattle.html">ACCESS FILE &gt;</a>
+            </article>
+
+            <article class="project-row">
+              <div class="project-main">
+                <div class="project-title-line">
+                  <span class="project-title">Beyond the horizon</span>
+                  <span class="project-tag">Unity · 2D</span>
+                </div>
+                <p class="project-desc">
+                  A 2D game that I helped with technical issuesin Unity.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer id="footer" class="site-footer">
+        <p>© 2025 Zixian Shi •
+          <a href="mailto:zixianshi@xqgai.com">zixianshi@xqgai.com</a> • phone: +1 610-762-0060
+        </p>
+      </footer>
+    </div>
+  </div>
 </body>
+
 </html>

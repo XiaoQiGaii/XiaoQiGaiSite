@@ -1,0 +1,46 @@
+/* ===========================
+   subpage.css (for all non-index pages)
+   Depends on css/style.css being loaded first
+   =========================== */
+
+/* Layout: keep same theme but give a clean reading width */
+
+/* Paragraph rhythm */
+
+
+
+/* Align helpers (your pages already use these classes) */
+.align-left { text-align: left; }
+.align-right { text-align: right; }
+
+
+/* Media consistency */
+main.info-section img,
+
+/* Links inside content: consistent */
+main.info-section a:hover {
+  border-bottom-style: solid;
+}
+
+/* Header: remove logo area on subpages (in case it exists) */
+.site-header .logo {
+  display: none !important;
+}
+
+/* Nav spacing stays clean even without logo */
+.nav-bar {
+  justify-content: flex-end;
+}
+
+/* Footer: keep consistent spacing on subpages */
+.site-footer {
+  padding: 1.25rem 1.25rem;
+}
+.site-footer p {
+  margin: 0;
+  text-align: center;
+  opacity: 0.92;
+}
+/* ===========================
+   End of subpage.css
+   =========================== */
