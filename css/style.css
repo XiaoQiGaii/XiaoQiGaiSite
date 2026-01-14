@@ -485,3 +485,35 @@ a:hover {
   border: 1px solid var(--border-subtle);
   background: rgba(0,0,0,0.35);
 }
+
+
+/* ===== Logo + Language Switch ===== */
+
+.site-header .logo-area {
+  display: flex !important;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.site-header .logo {
+  white-space: nowrap;
+}
+
+.site-header .lang-switch {
+  font-size: 0.75rem;
+  line-height: 1;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+}
+
+.site-header .lang-switch a {
+  color: #ffb74d;
+  text-decoration: none;
+  transition: color 0.2s, opacity 0.2s;
+}
+
+.site-header .lang-switch a:hover {
+  opacity: 1;
+  color: #ffd180;
+}

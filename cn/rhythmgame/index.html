@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rhythm-Based Card Game – Project Detail</title>
+  
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/subpage.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-bar">
+      <div class="logo">Xiao</div>
+      <ul class="nav-list">
+        <li><a href="/en/rhythmgame/">English</a></li>
+        <li><a href="/cn/index.html">主页</a></li>
+        <li><a href="#footer">联系</a></li>
+        <li><a href="https://www.linkedin.com/in/zixian-shi-030739300/" target="_blank">LinkedIn</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="info-section">
+    <h1 class="section-heading">节奏卡牌游戏 on Unity</h1>
+
+    <div class="info-paragraph align-right">
+      <strong>开发周期</strong>: 2 周
+    </div>
+
+    <p class="info-headparagraph highlight-paragraph">
+      一个节奏与卡牌战斗结合的游戏，玩家需要在节拍中击打并使用卡牌进行策略性战斗。
+      <br>合理在战斗外规划卡组，在战斗中分配策略才能帮助自己得心应手地在节拍上及时使用卡牌，发挥最大效果。
+    </p>
+
+    <p class="info-headparagraph highlight-paragraph">
+      在开发过程中，我决定加入类似《杀戮尖塔》的roguelike体验。
+    </p>
+
+    <div class="info-paragraph align-left">
+        <br><br>
+        <p><strong>项目链接:</strong></p>
+          <a href="https://github.com/XiaoQiGaii/Rhythm-Card-Roguelike" target="_blank">GitHub 仓库</a><br>
+          <a href="https://www.youtube.com/watch?v=7vcXCycfNEE" target="_blank">游戏演示视频</a>
+    </div>
+
+    <h2 class="section-heading">核心功能与特色</h2>
+
+    <div class="info-paragraph">
+      <h3>节拍同步</h3>
+      <p>使用 <code>AudioSettings.dspTime</code> 实现精确的节拍时间。</p>
+      <p>基于 ScriptableObject 的节拍表系统。</p>
+      <p>实时精确的节拍生成启动 搭配 <code>Queue</code> 逻辑的节拍打击检测以实现每次运行都在准确时间检测玩家的输入是否合法</p>
+      <p>在Fever 系统中，玩家可以进入一个特殊状态，在该状态下所有节拍输入都会被判定为完美，卡牌将发挥最大效果。</p>
+      <video src="/media/inBattle.mp4" controls style="max-width:100%; margin:1rem 0;"></video>
+    </div>
+
+    <div class="info-paragraph">
+      <h3>卡牌系统</h3>
+      <p>模块化卡牌效果、使用限制和动画反馈。</p>
+      <p>通过 <code>ScriptableObjects + prefabs</code> 实现易于扩展。</p>
+      <p>战斗中可添加/移除卡牌。</p>
+      <p>使用自定义着色器实现溶解动画。</p>
+      <img src="/media/deck.png" alt="Deck Screenshot" style="max-width:100%; margin:1rem 0;">
+    </div>
+
+    <div class="info-paragraph">
+      <h3>敌人与状态效果系统</h3>
+      <p>动态敌人状态机与健康值/名称更新。</p>
+      <p>实现了敌人的负面状态效果如流血等，由卡牌触发。</p>
+    </div>
+
+    <div class="info-paragraph">
+      <h3>节点地图系统</h3>
+      <p>可解锁的路径进程</p>
+      <p>房间分为5种: 宝藏, 商店（购买、删除卡牌）, 常规战斗, 精英战斗, 以及首领关卡。</p>
+      <img src="/media/map.png" alt="Map Screenshot" style="max-width:100%; margin:1rem 0;">
+    </div>
+
+    <div class="info-paragraph">
+      <h3>UI & 反馈</h3>
+      <p>为生命流逝、牌库浏览与货币获取添加了流畅的 UI 动画</p>
+      <p>战斗反馈与节拍同步，增强玩家体验。</p>
+      <img src="/media/shop.png" alt="Shop UI" style="max-width:100%; margin:1rem 0;">
+      <video src="/media/shop.mp4" controls style="max-width:100%; margin:1rem 0;"></video>
+    </div>
+
+    <div class="info-paragraph">
+      <h3>奖励系统</h3>
+      <p>每场战斗后选择卡牌奖励 ("可设定从N张卡中添加1张至牌库")。</p>
+      <img src="/media/reward.png" alt="Reward UI" style="max-width:100%; margin:1rem 0;">
+      <video src="/media/rewardsys.mp4" controls style="max-width:100%; margin:1rem 0;"></video>
+    </div>
+
+    <div class="info-paragraph">
+      <h3>音频设置</h3>
+      <p>可调节游戏内音乐、音效和背景音乐的音量。</p>
+      <img src="/media/audioSettings.png" alt="Audio Settings UI" style="max-width:100%; margin:1rem 0;">
+    </div>
+
+    <h2 class="section-heading">亮点</h2>
+    <div class="info-paragraph">
+      <p><code>ScriptableObjects</code>驱动框架；</p>
+      <p>动态牌库抽取/预览下一张抽取卡牌的系统；</p>
+      <p>音乐节奏上的游戏体验。</p>
+    </div>
+  </main>
+
+  <footer id="footer" class="site-footer">
+    <p>© 2025 Zixian Shi • <a href="mailto:zixianshi@xqgai.com">zixianshi@xqgai.com</a>  • 联系电话:+1 610-762-0060</p>
+  </footer>
+</body>
+</html>

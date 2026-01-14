@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survival Spring – Project Detail</title>
+  
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/subpage.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav-bar">
+      <div class="logo">小乞丐</div>
+      <ul class="nav-list">
+        <li><a href="/en/survivalgame/">English</a></li>
+        <li><a href="/cn/index.html">主页</a></li>
+        <li><a href="#footer">联系</a></li>
+        <li><a href="https://www.linkedin.com/in/zixian-shi-030739300/" target="_blank">LinkedIn</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="info-section">
+    <h1 class="section-heading">生存之春 - 一个开发中的虚幻 5多人生存游戏原型</h1>
+
+    <div class="info-paragraph align-right">
+      <strong>开发周期</strong>: 开发中
+    </div>
+
+    <p class="info-headparagraph highlight-paragraph">
+      一个提供类似 <strong>ARK: Survival Evolved</strong> 游戏结构的生存游戏模板。
+    </p>
+
+    <p class="info-headparagraph highlight-paragraph">
+      这是一个学习项目。在开发过程中，我学习了虚幻引擎5。
+    </p>
+
+    <h2 class="section-heading">核心功能与特色</h2>
+
+    <div class="info-paragraph">
+      <h3>游戏 UI</h3>
+      <p>开发了包含基本功能的主菜单和游戏内用户界面。</p>
+      <p>主界面</p>
+      <img src="/media/MainMenu.png" alt="Cliff Environment" style="max-width:100%; margin:1rem 0;">
+      <p>游戏内UI</p>
+      <img src="/media/InGameUI.png" alt="Cliff Environment" style="max-width:100%; margin:1rem 0;">
+    </div>
+
+    <div class="info-paragraph">
+      <h3>地形系统</h3>
+      <p>在给定的网格上自动生成地形景观，并确定相应的材质。</p>
+      <p>基于坡度函数，确定悬崖环境，并使用方向函数将泥地与悬崖混合。</p>
+      <img src="/media/cliff.png" alt="Cliff Environment" style="max-width:100%; margin:1rem 0;">
+      <p>根据坡度和高度函数，确定沙滩区域，并将其与草地融合。</p>
+      <img src="/media/beach.png" alt="Beach Environment" style="max-width:100%; margin:1rem 0;">
+      <p>使用 Unreal GrassType 实现草地、花卉和树叶效果。</p>
+      <img src="/media/foliage.png" alt="Foliage" style="max-width:100%; margin:1rem 0;">
+      <p>利用插件和地形图层来实现树木和水景效果。</p>
+      <p>根据算法自动选择适合景观类型的物理材质。</p>
+      <img src="/media/materials.png" alt="Materials" style="max-width:100%; margin:1rem 0;">
+      <img src="/media/landscape_grass.png" alt="Landscape Grass" style="max-width:100%; margin:1rem 0;">
+    </div>
+
+    <div class="info-paragraph">
+      <h3>Pawn</h3>
+      <p>将选定的网格模型与虚幻引擎中的 Quinn 角色绑定，以便进行动画制作。</p>
+    </div>
+
+    <div class="info-paragraph">
+      <h3>环境交互 - 脚步系统</h3>
+      <p>使用动画通知检测脚步。</p>
+      <p>在通知中执行逻辑和函数。</p>
+      <img src="/media/Notify_Blueprint.png" alt="Notify Blueprint" style="max-width:100%; margin:1rem 0;">
+      <img src="/media/Notify.png" alt="Notify" style="max-width:100%; margin:1rem 0;">
+      <p>使用虚幻物理材质实现脚步声音和脚步区域检测。</p>
+      <video src="/media/FootstepSoundShowcase.mp4" controls style="max-width:100%; margin:1rem 0;"></video>
+    </div>
+  </main>
+
+  <footer id="footer" class="site-footer">
+    <p>© 2025 Zixian Shi • <a href="mailto:zixianshi@xqgai.com">zixianshi@xqgai.com</a>  • 联系电话:+1 610-762-0060</p>
+  </footer>
+</body>
+</html>
